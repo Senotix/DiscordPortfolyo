@@ -1,4 +1,5 @@
 Discord Portfolyo sitesi
+Linklerinizi discord profilinizi göstermek için bir portfolyo
 4 tane tema eklenmiştir config.jsondan değiştirebiliriz
 config.jsondaki bilgileri kendinize göre doldurun 
 
