@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "adınız",
+    "theme": 1,
+    "nameMode": "username",
+    "description": "",
+    "backgroundUrl": "",
+    "backgroundBlur": 0,
+    "backgroundBrightness": 1,
+    "backgroundGrayscale": false,
+    "audio": {
+      "enabled": true,
+      "autoplay": true,
+      "src": "",
+      "volume": 0.35
+    }
+  },
+  "discord": {
+    "enabled": true,
+    "profileUrl": "",
+    "refreshSeconds": 15
+  },
+  "links": [
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/senotix"
+    }
+  ]
+}

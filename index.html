@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discord Profile</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <video class="background-video" muted loop playsinline></video>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="sound-control">
+      <button class="sound-button" type="button" aria-label="Sesi ac veya kapat" title="Ses">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+      <input class="sound-volume" type="range" min="0" max="1" step="0.01" aria-label="Ses seviyesi">
+    </div>
+
+    <main class="profile-shell">
+      <section class="identity" aria-label="Profil">
+        <img class="hero-avatar" alt="" src="">
+        <h1 class="profile-title">Profil</h1>
+        <p class="profile-description"></p>
+
+        <article class="discord-card">
+          <div class="avatar-wrap">
+            <span class="avatar-fallback" aria-hidden="true"></span>
+            <img class="card-avatar" alt="" src="">
+            <span class="status-dot" aria-hidden="true"></span>
+          </div>
+
+          <div class="profile-copy">
+            <div class="name-row">
+              <span class="profile-name">Profil</span>
+            </div>
+            <p class="activity">Yükleniyor...</p>
+          </div>
+        </article>
+
+        <nav class="social-links" aria-label="Baglantilar"></nav>
+      </section>
+    </main>
+
+    <audio class="page-audio" loop autoplay preload="metadata"></audio>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "discord-profile-page",
+  "version": "1.0.0",
+  "description": "Configurable Discord-style profile landing page.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
