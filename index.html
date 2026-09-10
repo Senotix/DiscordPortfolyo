@@ -1,52 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Discord Profile</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="background" aria-hidden="true">
-      <video class="background-video" muted loop playsinline></video>
-    </div>
-    <div class="grain" aria-hidden="true"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>senotix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background" id="background">
+    <video class="background-video" id="backgroundVideo" muted playsinline loop></video>
+  </div>
+  <div class="grain"></div>
 
-    <div class="sound-control">
-      <button class="sound-button" type="button" aria-label="Sesi ac veya kapat" title="Ses">
-        <i class="fa-solid fa-volume-xmark"></i>
-      </button>
-      <input class="sound-volume" type="range" min="0" max="1" step="0.01" aria-label="Ses seviyesi">
-    </div>
+  <div class="sound-control" id="soundControl" hidden>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Sesi aç / kapat"></button>
+    <input class="sound-volume" id="soundVolume" type="range" min="0" max="1" step="0.01" aria-label="Ses seviyesi">
+  </div>
 
-    <main class="profile-shell">
-      <section class="identity" aria-label="Profil">
-        <img class="hero-avatar" alt="" src="">
-        <h1 class="profile-title">Profil</h1>
-        <p class="profile-description"></p>
+  <main class="profile-shell">
+    <div class="identity">
+      <img class="hero-avatar" id="heroAvatar" alt="">
+      <h1 class="profile-title" id="profileTitle">senotix</h1>
+      <p class="profile-description" id="profileDescription" hidden></p>
 
-        <article class="discord-card">
-          <div class="avatar-wrap">
-            <span class="avatar-fallback" aria-hidden="true"></span>
-            <img class="card-avatar" alt="" src="">
-            <span class="status-dot" aria-hidden="true"></span>
+      <div class="discord-card" id="discordCard">
+        <div class="avatar-wrap">
+          <div class="avatar-fallback"></div>
+          <img class="card-avatar" id="cardAvatar" alt="" hidden>
+          <span class="status-dot offline" id="statusDot"></span>
+        </div>
+        <div class="profile-copy">
+          <div class="name-row">
+            <span class="profile-name" id="profileName">Yükleniyor…</span>
           </div>
+          <p class="activity" id="activity">Durum bekleniyor</p>
+        </div>
+      </div>
 
-          <div class="profile-copy">
-            <div class="name-row">
-              <span class="profile-name">Profil</span>
-            </div>
-            <p class="activity">Yükleniyor...</p>
-          </div>
-        </article>
+      <nav class="social-links" id="socialLinks"></nav>
+    </div>
+  </main>
 
-        <nav class="social-links" aria-label="Baglantilar"></nav>
-      </section>
-    </main>
-
-    <audio class="page-audio" loop autoplay preload="metadata"></audio>
-    <script src="app.js"></script>
-  </body>
+  <audio id="audioPlayer" loop preload="auto"></audio>
+</body>
 </html>

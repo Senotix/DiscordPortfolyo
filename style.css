@@ -1,3 +1,7 @@
+[hidden] {
+  display: none !important;
+}
+
 :root {
   --text: #ffffff;
   --muted: rgba(255, 255, 255, 0.76);
@@ -454,6 +458,11 @@ body:not([data-theme="4"]):not(.has-description) .discord-card {
   transform: translateY(-3px) scale(1.04);
 }
 
+.social-link i {
+  font-size: 0.78em;
+  line-height: 1;
+}
+
 .cdn-icon {
   display: block;
   width: 1em;
@@ -838,5 +847,4 @@ body[data-theme="4"] .social-link[data-icon="tiktok"] {
     align-self: center;
     margin-bottom: 12px;
   }
-
 }
